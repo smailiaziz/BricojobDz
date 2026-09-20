@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+html, body {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  overscroll-behavior-y: auto; /* Restores light bounce at edges */
+  -webkit-overflow-scrolling: touch; /* Momentum scrolling for iOS */
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+/* Prevent layout shifts on navigation */
+* {
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Prevent iOS Safari auto-zoom on input focus by ensuring inputs have at least 16px font-size */
+@media screen and (max-width: 768px) {
+  input, select, textarea {
+    font-size: 16px !important;
+  }
+}
+
+/* Hide scrollbars for clean horizontal lists while maintaining smooth touch panning */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

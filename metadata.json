@@ -1,0 +1,8 @@
+{
+  "name": "BricojobDz v3",
+  "description": "تطبيق جزائري لربط الأشخاص بالحرفيين ومقدمي الخدمات المنزلية والمهنية بكل ثقة وسرعة\nتحديث يوم 18 سبتمبر 2026",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
